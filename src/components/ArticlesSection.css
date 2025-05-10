@@ -1,0 +1,25 @@
+.articles {
+    padding: 50px;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .article-card {
+    background: #f0f0f0;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all 0.3s;
+  }
+  
+  .article-card:hover {
+    background: #27AE60;
+    color: white;
+  }
+  

@@ -75,7 +75,11 @@ function Navbar() {
               </div>
             )}
           </div>
-          <FiHeart className="icon" />
+
+          <Link to="/favorites">
+            <FiHeart className="icon" />
+          </Link>
+
           <Link to="/cart" className="cart-link">
             <FiShoppingBag className="icon" />
             {cart.length > 0 && (
@@ -88,9 +92,9 @@ function Navbar() {
       {/* Navigation Categories Bar */}
       <div className="nav-categories">
         <Link to="/">Home</Link>
-        <Link to="/shop">Shop</Link>
-        <Link to="/about">About</Link>
-        <Link to="/articles">Articles</Link>
+        <Link to="/braclet">Braclets</Link>
+        <Link to="/ring">Rings</Link>
+        <Link to="/necklace">Necklaces</Link>
         <Link to="/contact">Contact</Link>
         <Link to="/shop" className="highlight">OUTLET</Link>
       </div>

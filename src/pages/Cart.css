@@ -1,6 +1,5 @@
-/* cart.css */
 .page-container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   font-family: Arial, sans-serif;
@@ -12,17 +11,76 @@
   font-weight: bold;
 }
 
-.cart-items {
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cart-left {
+  flex: 2;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.cart-summary {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  min-width: 250px;
+  height: fit-content;
+}
+
+.cart-summary h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.summary-item,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.summary-total {
+  font-weight: bold;
+  color: #004aad;
+}
+
+.checkout-btn {
+  background-color: #004aad;
+  color: white;
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.checkout-btn:hover {
+  background-color: #00337f;
+}
+
+.coupon-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   margin-top: 1rem;
 }
 
 .cart-item {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
   border: 1px solid #ddd;
   padding: 1rem;
   border-radius: 6px;
@@ -30,33 +88,53 @@
 }
 
 .cart-item img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
-  margin-right: 1rem;
   border-radius: 4px;
 }
 
-.cart-item h3 {
+.cart-details {
   flex: 1;
+}
+
+.cart-details h3 {
   font-size: 1.1rem;
-  margin: 0;
+  margin: 0 0 0.4rem 0;
 }
 
-.cart-item p {
-  font-weight: bold;
-  margin: 0 1rem;
+.cart-meta {
+  margin: 0.2rem 0;
+  color: #444;
 }
 
-.cart-item button {
-  background-color: #ff6347;
-  color: white;
-  border: none;
-  padding: 0.4rem 0.8rem;
-  border-radius: 5px;
+.cart-quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.cart-quantity button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 
-.cart-item button:hover {
-  background-color: #e53e3e;
+.cart-price {
+  font-weight: bold;
+  font-size: 1rem;
+  min-width: 80px;
+  text-align: right;
+}
+
+.cart-remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #e53e3e;
+  margin-left: 0.5rem;
 }

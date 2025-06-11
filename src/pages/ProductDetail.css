@@ -1,0 +1,140 @@
+/* src/pages/ProductDetail.css */
+
+.product-detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #f8f9fa;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-image {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.detail-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.product-code {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.detail-info h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.detail-info .price {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #26262a;
+  margin-bottom: 1rem;
+}
+
+.detail-info p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.size-select {
+  margin-bottom: 1rem;
+}
+
+.size-select label {
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+.size-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.size-button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.size-button:hover {
+  background-color: #f0f0f0;
+}
+
+.size-button.selected {
+  border-color: #2b75ff;
+  background-color: #e5e6ff;
+  font-weight: bold;
+}
+
+.size-button:disabled {
+  text-decoration: line-through;
+  color: #bbb;
+  background-color: #f9f9f9;
+  cursor: not-allowed;
+}
+
+.detail-info button {
+  margin-top: 1rem;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: rgb(15, 66, 208);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.detail-info button:hover {
+  background: rgb(15, 66, 208);
+}
+
+.back-btn {
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #aaa;
+  padding: 10px 18px;
+  border-radius: 8px;
+  margin-top: 2rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #333;
+  color: white;
+}

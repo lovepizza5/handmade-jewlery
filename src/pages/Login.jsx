@@ -19,7 +19,7 @@ const Login = () => {
       const res = await axios.post('http://127.0.0.1:8000/api/auth/login/', formData);
       localStorage.setItem('access_token', res.data.access);  // Store token in localStorage
       alert('Login successful');
-      navigate('/dashboard'); // Redirect to dashboard after successful login
+      navigate('/cart'); // Redirect to dashboard after successful login
     } catch (err) {
       alert('Invalid credentials');
     }
@@ -32,7 +32,7 @@ const Login = () => {
         <input
           type="text"
           name="username"
-          placeholder="Username"
+          placeholder="📧 E-mail"
           required
           value={formData.username}
           onChange={handleChange}
@@ -40,7 +40,7 @@ const Login = () => {
         <input
           type="password"
           name="password"
-          placeholder="Password"
+          placeholder="🗝️ Password"
           required
           value={formData.password}
           onChange={handleChange}
